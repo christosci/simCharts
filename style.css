@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/* Global Styles */
+body {
+	background-color: #212121;
+	color: #cccccc;
+	font-family: Open Sans;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+li { 
+	padding-bottom: 2px 
+}
+
+/* Front page */
+.front_page {
+	margin-top: 100px;
+	text-align: center;
+	overflow: hidden;
+    white-space: nowrap;
+}
+.front_page input {
+	font-family: Open Sans;
+	border: 1px solid #555;
+	color: #ddd;
+	font-size: 16px;
+	padding: 10px;
+	border-radius: 0;
+	-webkit-appearance: none;
+	display: inline-block;
+}
+.front_page input[type=text] {
+	background-color: #1A1A1A;
+	width: 350px;
+	text-transform: uppercase;
+}
+.front_page input[type=text]::placeholder {
+	text-transform: none;
+	font-size: 15px;
+	font-style: italic;
+}
+.front_page input[type=submit] {
+	background-color: #004040;
+	cursor: pointer;
+}
+.front_page input[type=submit]::-moz-focus-inner { 
+    border: 0;
+}
+.front_page input[type=submit]:hover {
+	background-color: #003030;
+}
+.footer {
+	font-size: 12px;
+	color: #aaa;
+}
+.footer_links {
+	margin-top: 20px;
+}
+.footer_links a, 
+.footer_links a:visited {
+	color: #aaa;
+	text-decoration: none;
+}
+
+
+/* Results page */
+.results_form {
+	text-align: left;
+	margin-bottom: 50px;
+}
+.results_form .button.homebutton, 
+.results_form .button.helpbutton {
+	width: 40px;
+	margin-right: 3px;
+	float: left;
+	cursor: pointer;
+}
+.results_form input[type=text], .results_form .button {
+	font-family: Open Sans;
+	border: 1px solid #555;
+	color: #ddd;
+	font-size: 13px;
+	padding: 7px;
+	border-radius: 0;
+	-webkit-appearance: none;
+	display: inline-block;
+}
+.results_form input[type=text] {
+	background-color: #1A1A1A;
+	width: 200px;
+	text-transform: uppercase;
+}
+.results_form input[type=text]::placeholder {
+	text-transform: none;
+	font-style: italic;
+}
+.results_form .button {
+	background-color: #004040;
+	cursor:pointer;
+}
+.results_form .button::-moz-focus-inner { 
+    border: 0;
+}
+.results_form .button:hover {
+	background-color: #003030;
+}
+.results a, .results a:visited {
+	color: #dddddd;
+	text-decoration: none;
+}
+.results a:hover {
+	text-decoration: underline;
+	background-color: #aaaa00;
+	color: #000;
+}
+.results table {
+	padding-top: 25px;
+  	margin: 0 auto;
+	font-size: 13px;
+	margin-bottom: 50px;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 90%;
+}
+.results td {
+	vertical-align: top;
+}
+.results table, .results td, .results th {
+	border: 1px solid #555;
+	padding: 10px;
+	background-color: #1A1A1A;
+}
+
+/* Help page */
+.help {
+	font-size: 13px;
+	padding: 10px;
+	background-color: #1A1A1A;
+	border: 1px solid #555;
+}
+.help table {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-collapse: collapse;
+}
+.help table, .help td, .help th {
+	border: 1px solid #555;
+	padding: 5px;
+}
+.help p {
+	margin-bottom: 20px;
+}

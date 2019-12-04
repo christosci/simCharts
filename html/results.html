@@ -1,0 +1,51 @@
+<?php 
+require_once('airport.php');
+require_once('results.php'); 
+require_once('searchbar.html');
+?>
+
+<div class="results">
+	<table>
+		<tr>
+			<th colspan="5">
+				<?php echo sprintf('%s/%s - %s', $meta['icao_ident'], $meta['ident'], $meta['name']); ?><br>
+				<?php echo sprintf('%s, %s', $meta['city'], $meta['state']); ?>
+			</th>
+		</tr>
+		<tr>
+			<?php 
+			foreach ($available_record_keys as $key) { 
+				switch ($key) {
+					case 'min':
+						echo '<th>Airport Diagram and Minima</th>';
+						break;
+					case 'dp':
+						echo '<th>Departure Procedures</th>';
+						break;
+					case 'star':
+						echo '<th>Standard Terminal Arrivals</th>';
+						break;
+					case 'iap':
+						echo '<th>Approach Procedures</th>';
+						break;
+				}
+			}
+			?>
+		</tr>
+		<tr>
+			<?php 
+			foreach ($available_record_keys as $key) {
+			?>
+				<td>
+					<ul>
+						<?php 
+						foreach ($records[$key] as $record) {
+							echo $apt->get_record_link($record);
+						}
+						?>
+					</ul>
+				</td>
+			<?php } ?>
+		</tr>
+	</table>
+</div>

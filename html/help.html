@@ -1,0 +1,78 @@
+<?php 
+    require_once('searchbar.html');
+?>
+
+<div class="help">
+    <h2>Help Page</h2>
+    <p>
+    <h3>About</h3>
+    SimCharts is a tool that provides quick and easy access FAA terminal procedure charts. 
+    All charts are property of their respective owners and are presented here for entertainment purposes only. 
+    The information contained on this website is not intended nor should be used for real world navigation.
+    </p>
+    <p>
+    <h3>Performing a Basic Search</h3>
+    To perform a basic search, enter an FAA or ICAO airport identifier. If the query is successful, all available charts for the airport will be shown, categorized by their type. 
+    If no matching records are found, you will be redirected back to the home page.
+    </p>
+    <p>
+    <h3>Perfoming a Direct Search</h3>
+    A direct search allows you to directly display a chart as quickly as possible. To perform a direct search, enter an FAA or ICAO airport identifier, followed by a dot (.) separator, followed by the full or partial PDF name.
+    For Departure Procedure (DP) and Standard Terminal Arrival (STAR) charts, the PDF name will usually be the name of the procedure itself. For example, to display the CEDAR CREEK STAR for DFW airport, you can either enter "DFW.CEDARCREEK" in full, or the first few letters of the PDF name such as "DFW.CED".<br>
+    In cases where the procedure spans across multiple pages, the above steps will display only the first page of the procedure. In order to display subsequent pages, you will need to enter another dot (.) separator followed by a page number &mdash; for example, "DFW.CED.2".<br>
+
+    To display Airport Diagrams (AD), enter an airport identifier, followed by a dot (.) separator, followed by the abbreviation "AD" &mdash; for example, "DFW.AD".<br>
+
+    To display Instrument Approach Procedures (IAP), you will need to familiarize yourself with the following PDF name abbreviations:
+
+    <table>
+        <tr>
+            <th>Approach Type</th>
+            <th>PDF Abbreviation</th>
+        </tr>
+        <tr>
+            <td>GLS</td>
+            <td>GLS</td>
+        </tr>
+        <tr>
+            <td>GPS</td>
+            <td>G</td>
+        </tr>
+        <tr>
+            <td>LDA</td>
+            <td>LDA</td>
+        </tr>
+        <tr>
+            <td>ILS</td>
+            <td>IL</td>
+        </tr>
+        <tr>
+            <td>NDB</td>
+            <td>N</td>
+        </tr>
+        <tr>
+            <td>LOC</td>
+            <td>L</td>
+        </tr>
+        <tr>
+            <td>RNAV</td>
+            <td>R</td>
+        </tr>
+        <tr>
+            <td>RNAV (RNP)</td>
+            <td>RR</td>
+        </tr>
+        <tr>
+            <td>VOR</td>
+            <td>V</td>
+        </tr>
+    </table>
+
+    If the approach includes a runway, enter the abbreviation followed by the runway &mdash; for example, "DFW.IL17C".<br>
+
+    If the approach name involves a DME, enter the abbreviation followed by the letter "D", followed by the runway (if applicable) &mdash; for example, "MLU.VD4" for the VOR/DME RWY 4 to MLU. The same steps apply for approaches which involve a duplicate identification suffix. For example, to display the RNAV (RNP) X RWY 13R for DAL, you would enter "DAL.RRX13R".<br>
+
+    These steps should cover the most common types of procedures. Some discrepancies may exist from one procedure to another, therefore you may have to resort to a basic search if your query is unsuccessful.
+    </p>
+    
+</div>
